@@ -1,73 +1,65 @@
-body {
-    background: rgb(39, 40, 10);
-    background: linear-gradient(
-            148deg,
-            rgba(39, 40, 10, 1) 0%,
-            rgba(3, 3, 19, 1) 35%,
-            rgba(9, 40, 47, 1) 100%
-        )
-        no-repeat;
-    min-height: 100vh;
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>JavaScript Calculator</title>
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/5.0.0-alpha1/css/bootstrap.min.css" integrity="sha384-r4NyP46KrjDleawBgD5tp8Y7UzmLA05oM1iAEQ17CSuDqnUK2+k9luXQOfXJCJ4I" crossorigin="anonymous">
+  <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
+  <script src="https://stackpath.bootstrapcdn.com/bootstrap/5.0.0-alpha1/js/bootstrap.min.js" integrity="sha384-oesi62hOLfzrys4LxRF63OJCXdXDipiYWBnvTl9Y9/TRlw5xlKIEHpNyvvDShgf/" crossorigin="anonymous"></script>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+<!-- Simple Calculator -->
+    <div class="container pt-5">
+        <div class="row ">
+            <div class="col text-center">
+                <div class="calculator">
+                    <div class="outInArea">
+                        <input type="text" name="inputOutput" id="input">
+                    <table >
+                        <tr cellspacing='50'>
+                            <td><button id="sub">MC</button></td>
+                            <td><button>MR</button></td>
+                            <td><button>MS</button></td>
+                            <td><button>M+</button></td>
+                        </tr>
+                        <tr>
+                            <td><button>(</button></td>
+                            <td><button>)</button></td>
+                            <td><button id="clear">C</button></td>
+                            <td><button>/</button></td>
+                        </tr>
+                        <tr>
+                            <td><button>7</button></td>
+                            <td><button>8</button></td>
+                            <td><button>9</button></td>
+                            <td><button>X</button></td>
+                        </tr>
+                        <tr>
+                            <td><button>4</button></td>
+                            <td><button>5</button></td>
+                            <td><button>6</button></td>
+                            <td><button>-</button></td>
+                        </tr>
+                        <tr>
+                            <td><button>1</button></td>
+                            <td><button>2</button></td>
+                            <td><button>3</button></td>
+                            <td><button>+</button></td>
+                        </tr>
+                        <tr>
+                            <td colspan="2"><button>0</button></td>
+                            <td><button>.</button></td>
+                            <td><p id="equal">=</p></td>
+                        </tr>
+                    </table>
+                </div>
+            </div>
+        </div>
+    </div>
 
-    background: linear-gradient(90deg, #4b6cb7 0%, #182848 100%);
-    background: linear-gradient(90deg, #fc466b 0%, #3f5efb 100%);
-}
-button:focus {
-    outline: none;
-}
-button {
-    border: none;
-    background-color: transparent;
-}
-.calculator {
-    display: inline-block;
-    background: #0d161a;
-    padding: 25px 20px;
-    margin-top: 2rem;
-    color: #1affe0;
-    width: 350px;
-    text-align: center;
-    border-radius: 5px;
-}
-input {
-    width: 100%;
-    outline: none;
-    border: none;
-    padding: 10px 10px;
-    background: linear-gradient(90deg, #e3ffe7 0%, #d9e7ff 100%);
-}
-#input {
-    border-radius: 5px;
-    height: 90px;
-    font-size: 25px;
-    color: #115963;
-}
-#output {
-    font-size: 22px;
-    border-radius: 0 0 5px 5px;
-}
-.calculator table {
-    margin: auto;
-}
 
-table {
-    margin-top: 10px !important;
-}
-table tr td {
-    padding: 10px 12px;
-    background: repeating-linear-gradient(
-        148deg,
-        rgba(0, 0, 0, 1) 0%,
-        rgba(9, 40, 47, 1) 100%
-    );
-}
-table tr td button {
-    padding: 10px 15px;
-    color: turquoise;
-}
-table tr td p {
-    padding: 10px 15px;
-    color: turquoise;
-    margin: 0;
-    cursor: pointer;
-}
+<script src="app.js"></script>
+</body>
+</html>
